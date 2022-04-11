@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset_style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="enter">
+          <div class="enter__container">
+            <button class="enter__signup signup">sign up</button>
+            <button class="enter__login login">log in</button>
+          </div>
+        </div>
+        <div class="modal">
+          <div class="modal__signup signup-modal">
+            <div class="signup-modal__container">
+              <h2 class="signup-modal__title">sign up</h2>
+              <form action="#" method="post" class="signup-modal__form">
+                <div class="signup-modal__wrap">
+                  <input
+                    type="text"
+                    id="signup-modal__name"
+                    class="modal__input"
+                    autocomplete="off"
+                  />
+                  <label for="signup-modal__name" class="modal__label"
+                    >Name</label
+                  >
+                </div>
+                <div class="signup-modal__wrap">
+                  <input
+                    type="text"
+                    id="signup-modal__surname"
+                    class="modal__input"
+                    autocomplete="off"
+                  />
+                  <label for="signup-modal__surname" class="modal__label"
+                    >Surname</label
+                  >
+                </div>
+
+                <div class="signup-modal__wrap">
+                  <input
+                    type="email"
+                    id="signup-modal__email"
+                    class="modal__input"
+                    name="fdgfdsf"
+                    autocomplete="sadasfdgd"
+                  />
+                  <label for="signup-modal__email" class="modal__label"
+                    >Email</label
+                  >
+                </div>
+
+                <div class="signup-modal__wrap">
+                  <input
+                    type="password"
+                    id="signup-modal__password"
+                    class="modal__input"
+                    autocomplete="off"
+                  />
+                  <label for="signup-modal__password" class="modal__label"
+                    >Password</label
+                  >
+                </div>
+
+                <button
+                  type="button"
+                  class="signup-modal__submit-btn modal__btn"
+                >
+                  Sign up
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="modal__login login-modal">
+            <div class="login-modal__container">
+              <div class="login-modal__title">Log in</div>
+              <form action="#" method="post" class="login-modal__form">
+                <div class="login-modal__wrap">
+                  <input
+                    type="email"
+                    id="login-modal__email"
+                    class="modal__input"
+                    autocomplete="off"
+                  />
+                  <label for="login-modal__email" class="modal__label">
+                    Email
+                  </label>
+                </div>
+                <div class="login-modal__wrap">
+                  <input
+                    type="password"
+                    id="login-modal__password"
+                    class="modal__input"
+                    autocomplete="off"
+                  />
+                  <label for="login-modal__password" class="modal__label">
+                    Password
+                  </label>
+                </div>
+                <button
+                  type="button"
+                  class="login-modal__submit-btn modal__btn"
+                >
+                  Log in
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="services">
+          <div class="services__container">
+            <h1 class="services__title">services</h1>
+            <div class="services__subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="services__body">
+              <div class="services__item item-services">
+                <div class="item-services__img">
+                  <img src="services/img/Без названия.jpg" alt="" />
+                </div>
+                <div class="item-services__title">service one</div>
+                <div class="item-services__subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Reiciendis necessitatibus quidem amet error repellat deleniti
+                  ratione voluptate eius! Sapiente quidem sequi ipsam magnam
+                  tempora provident nostrum quaerat accusantium ipsa error.
+                </div>
+                <a
+                  href="./services/service_1.html"
+                  class="item-services__btn signup"
+                  >Learn more</a
+                >
+              </div>
+              <div class="services__item item-services">
+                <div class="item-services__img">
+                  <img
+                    src="services/img/1532697550_krasivyy-peyzazh.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="item-services__title">service two</div>
+                <div class="item-services__subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                  temporibus beatae sunt officia quibusdam necessitatibus unde.
+                  Eligendi, ipsa explicabo provident iusto incidunt voluptatibus
+                  labore quibusdam neque, vitae, quis dolorem reprehenderit!
+                </div>
+                <a
+                  href="./services/service_2.html"
+                  class="item-services__btn signup"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabs">
+          <div class="tabs__container">
+            <div class="tabs__nav nav-tabs">
+              <a
+                href="#1"
+                data-tab="1"
+                class="nav-tabs__item nav-tabs__item_active"
+                >Tab 1</a
+              >
+              <a href="#2" data-tab="2" class="nav-tabs__item">Tab 2</a>
+              <a href="#3" data-tab="3" class="nav-tabs__item">Tab 3</a>
+              <a href="#4" data-tab="4" class="nav-tabs__item">Tab 4</a>
+            </div>
+            <div class="tabs__content">
+              <div data-tab-content="1" class="tab-pane tab-pane_active">
+                <div class="tab-pane__img">
+                  <img src="img/tabs/tab1.jpg" alt="" />
+                </div>
+                <div class="tab-pane__title">Title 1</div>
+                <div class="tab-pane__subtitle">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Corporis, rem? Porro officiis, quas molestiae cum quasi modi
+                  similique ex. Ducimus facere soluta libero, quibusdam
+                  molestias quis nam nobis asperiores doloremque.
+                </div>
+              </div>
+              <div data-tab-content="2" class="tab-pane">
+                <div class="tab-pane__img">
+                  <img src="img/tabs/tab2.jpg" alt="" />
+                </div>
+                <div class="tab-pane__title">Title 2</div>
+                <div class="tab-pane__subtitle">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Corporis, rem? Porro officiis, quas molestiae cum quasi modi
+                  similique ex. Ducimus facere soluta libero, quibusdam
+                  molestias quis nam nobis.
+                </div>
+              </div>
+              <div data-tab-content="3" class="tab-pane">
+                <div class="tab-pane__img">
+                  <img src="img/tabs/tab1.jpg" alt="" />
+                </div>
+                <div class="tab-pane__title">Title 3</div>
+                <div class="tab-pane__subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque, nostrum atque deserunt repellat assumenda, dicta omnis
+                  maxime ipsa nam tempora in ut modi voluptatibus sequi,
+                  dignissimos delectus asperiores molestiae quaerat?
+                </div>
+              </div>
+              <div data-tab-content="4" class="tab-pane">
+                <div class="tab-pane__img">
+                  <img src="img/tabs/tab4.jpg" alt="" />
+                </div>
+                <div class="tab-pane__title">Title 4</div>
+                <div class="tab-pane__subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Alias mollitia aut, odit id blanditiis illo accusamus
+                  quibusdam fuga similique officiis, hic expedita libero
+                  dolores! Quisquam!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.service {
+  margin: 0px auto;
+  padding: 15px;
+}
+.service__back-btn {
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  font-size: 36px;
+  opacity: 1;
+	outline: 0;
+	color: #fff;
+	line-height: 48px;
+	text-align: center;
+	letter-spacing: 1px;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.service__back-btn:hover::after{
+  opacity: 1;
+	transform: translateY(0) rotateX(0);
+}
+.service__back-btn:hover::before{
+  opacity: 0;
+	transform: translateY(50%) rotateX(90deg);
+}
+.service__back-btn::after{
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: #150420;
+  display: block;
+  transition: .5s;
+  position: absolute;
+  content: attr(data-hover);
+  transform: translateY(-50%) rotateX(90deg);
+}
+.service__back-btn::before{
+  top: 0;
+		left: 0;
+		opacity: 1;
+		color: #170320;
+		display: block;
+		padding: 0 30px;
+		line-height: 40px;
+		transition: .5s;
+		position: relative;
+		content: "Back";
+		transform: translateY(0) rotateX(0);
+
+}
+.service__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service__img {
+  max-width: 900px;
+  height: 900px;
+  margin-bottom: 30px;
+}
+.service__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.service__title {
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.service__subtitle {
+  font-size: 24px;
+  text-align: center;
+}
